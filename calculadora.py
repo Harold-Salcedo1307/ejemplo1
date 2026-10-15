@@ -17,10 +17,8 @@ def calculadora():
     print("Selecciona una operación:")
     print("1. Suma")
     print("2. Resta")
-    print("3. Multiplicación")
-    print("4. División")
 
-    opcion = input("Introduce el número de la operación (1/2/3/4): ")
+    opcion = input("Introduce el número de la operación (1/2): ")
 
     if opcion in ('1', '2', '3', '4'):
         try:
@@ -34,10 +32,6 @@ def calculadora():
             print(f"Resultado: {num1} + {num2} = {sumar(num1, num2)}")
         elif opcion == '2':
             print(f"Resultado: {num1} - {num2} = {restar(num1, num2)}")
-        elif opcion == '3':
-            print(f"Resultado: {num1} * {num2} = {multiplicar(num1, num2)}")
-        elif opcion == '4':
-            print(f"Resultado: {num1} / {num2} = {dividir(num1, num2)}")
     else:
         print("Opción no válida. Por favor, elige una opción entre 1 y 4.")
 
